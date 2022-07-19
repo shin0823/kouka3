@@ -31,9 +31,21 @@ class MenuController extends Controller
 
 public function update(Request $request )
 {
-    $action = $request->get('action', 'back');
-    $input = $request->expect('action');
+    $action = $request->get('action', 'update');
+    $input = $request->except('action');
 
+    if($request->action === 'update') {
+        //認可処理
+        if(Gate::allows('admin')) {
+            $res = $request->input('inputdata');
+            return view('test/complete', ['inputdata' => $res]);
+        } else {
+            session()->flash('adminmsg', 'あんた更新できないよ！！');
+            return view('test/update');
+        }
+    }
+    $action = $request->get('action', 'back');
+    $input = $request->except('action');
     if($request->action === 'back') {
         return view('test/menu');
     }

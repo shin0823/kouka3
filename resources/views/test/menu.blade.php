@@ -1,18 +1,20 @@
 
 <html>
-<head>
-    <meta charset="utf-8">
-</head>
-<body>
-    <a href="">照会処理</a><br />
-    <a href="">更新処理</a><br />
-    <a href={{ route('logout') }} onclick="event.preventDefault();
-    document.getElementById('logout-form').submit();">
-     Logout
-</a>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        こんにちは！{{ Auth::user()->name }}<br /><br />
+        <a href="/test/search">照会処理</a><br />
 
-<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-@csrf
-</form>
-</body>
-</html>
+            <a href="/test/update">更新処理</a><br /><br />
+
+        <a href={{ route('logout') }} onclick="event.preventDefault();
+        document.getElementById('logout-form').submit();">
+        Logout
+        </a>
+        <form id='logout-form' action={{ route('logout')}} method="POST" style="display: none;">
+            @csrf
+        </form>
+    </body>
+    </html>
