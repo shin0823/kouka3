@@ -19,4 +19,33 @@ class MenuController extends Controller
             return view('auth/login');
         }
     }
+    public function search(Request $request )
+{
+    $action = $request->get('action', 'back');
+    $input = $request->except('action');
+
+    if($request->action === 'back') {
+        return view('test/menu');
+    }
+}
+
+public function update(Request $request )
+{
+    $action = $request->get('action', 'back');
+    $input = $request->expect('action');
+
+    if($request->action === 'back') {
+        return view('test/menu');
+    }
+}
+
+public function complete(Request $request )
+{
+    $action = $request->get('action', 'back');
+    $input = $request->except('action');
+
+    if($request->action === 'back') {
+        return view('test/menu');
+    }
+}
 }

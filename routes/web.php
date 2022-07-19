@@ -19,3 +19,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/test/menu', 'Test\MenuController@menu');
+Route::post('/test/search', 'Test\MenuController@search')->name('search');
+Route::post('/test/update', 'Test\MenuController@update')->name('update');
+Route::post('/test/complete', 'Test\MenuController@complete')->name('complete');

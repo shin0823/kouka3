@@ -15,15 +15,18 @@ class AddColumnUsersTable extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             //
-            $table->boolean('admin_chk')->default(0)->after('password'); //これを追加
         });
     }
 
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
     public function down()
     {
         Schema::table('users', function (Blueprint $table) {
             //
-            $table->dropColumn('admin_chk'); //これを追加
         });
     }
 }
