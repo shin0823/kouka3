@@ -6,7 +6,8 @@
 <h1>更新完了画面</h1>
 こんにちは！{{ Auth::user()->name }}<br /><br />
     これを入力したよね？<br />
+    <form action="test/complete" method="post"></form>
     {{ $inputdata }}<br /><br />
-    <button type="submit" name="action" value="back">{{ __('back') }}</button>
+    <button type="button" onClick="history.back()">back</button>
 </body>
 </html>

@@ -6,8 +6,9 @@
 <h1>照会画面</h1>
 こんにちは！{{ Auth::user()->name }}<br /><br />
 何か表示するよ！そのうちね
+<form action="test/search" method="post"></form>
 <br />
-<button type="submit" name="action" value="back">{{ __('back') }}</button>
+<button type="button" onClick="history.back()">back</button>
 <br />
 </body>
 </html>

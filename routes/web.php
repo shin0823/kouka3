@@ -19,6 +19,9 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/test/menu', 'Test\MenuController@menu');
+Route::get('/test/search', 'Test\MenuController@search')->name('search');
 Route::post('/test/search', 'Test\MenuController@search')->name('search');
-Route::post('/test/update', 'Test\MenuController@update')->name('update');
+Route::get('/test/update', 'Test\MenuController@update')->name('update');
 Route::post('/test/complete', 'Test\MenuController@complete')->name('complete');
+// Route::get('/test/complete', 'Test\MenuController@complete')->name('complete');
+// Route::post('/test/complete', 'Test\MenuController@complete')->name('complete');
