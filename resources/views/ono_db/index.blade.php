@@ -5,13 +5,13 @@
 
 @section('content')
    <table>
-   <tr><th>id</th><th>Name</th><th>Mail</th></tr>
-   @foreach ($items as $item)
-       <tr>
-           <td>{{$item->id}}</td>
-           <td>{{$item->name}}</td>
-           <td>{{$item->mail}}</td>
-       </tr>
+    <tr><th>Id</th><th>Name</th><th>Email</th></tr>
+    @foreach ($items as $item)
+        <tr>
+            <td>{{$item->id}}</td>
+            <td>{{$item->name}}</td>
+            <td>{{$item->email}}</td>
+        </tr>
    @endforeach
    </table>
    <br>
