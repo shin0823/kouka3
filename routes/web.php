@@ -23,5 +23,7 @@ Route::get('/test/search', 'Test\MenuController@search')->name('search');
 Route::post('/test/search', 'Test\MenuController@search')->name('search');
 Route::get('/test/update', 'Test\MenuController@update')->name('update');
 Route::post('/test/complete', 'Test\MenuController@complete')->name('complete');
+Route::get('/ono_db/index', 'ono_dbController@index');
+Route::post('/ono_db/index', 'ono_dbController@index');
 // Route::get('/test/complete', 'Test\MenuController@complete')->name('complete');
 // Route::post('/test/complete', 'Test\MenuController@complete')->name('complete');

@@ -7,7 +7,9 @@
         こんにちは！{{ Auth::user()->name }}<br /><br />
         <a href="/test/search">照会処理</a><br />
 
-            <a href="/test/update">更新処理</a><br /><br />
+            <a href="/test/update">更新処理</a><br />
+
+            <a href="/ono_db/index">アカウント管理</a><br /><br />            
 
         <a href={{ route('logout') }} onclick="event.preventDefault();
         document.getElementById('logout-form').submit();">
