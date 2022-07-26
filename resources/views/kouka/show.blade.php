@@ -3,19 +3,17 @@
 @section('title', 'Kouka')
 
 @section('menu_title')
-ユーザ情報詳細画面
+競走馬データ詳細画面
 
 @endsection
 @section('content')
    <table>
-   <tr><th>Name(Age)</th><th>Data</th></tr>
+   <tr><th>Name</th><th>Data</th></tr>
        <tr>
            <td>{{$item->name}}</td>
            <td>{{$item->data}}</td>
        </tr>
    </table>
+   <button type="button" onClick="history.back()">戻る</button>
 @endsection
 
-@section('footer')
-copyright 2020 東京情報クリエイター工学院専門学校.
-@endsection

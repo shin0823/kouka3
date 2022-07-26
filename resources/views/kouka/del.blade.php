@@ -3,7 +3,7 @@
 @section('title', 'Kouka')
 
 @section('menu_title')
-ユーザ情報削除画面
+競走馬データ削除画面
 @endsection
 
 @section('content')
@@ -16,8 +16,6 @@
       <tr><th></th><td><input type="submit" value="削除"></td></tr>
    </table>
    </form>
+   <button type="button" onClick="history.back()">戻る</button>
 @endsection
 
-@section('footer')
-copyright 2020 東京情報クリエイター工学院専門学校.
-@endsection

@@ -3,7 +3,7 @@
 @section('title', 'Kouka')
 
 @section('menu_title')
-ユーザ情報一覧画面
+競走馬データ一覧画面
 @endsection
 
 @section('content')
@@ -25,9 +25,12 @@
        </tr>
    @endforeach
    </table>
+   <button type="button" onClick="history.back()">戻る</button>
+   <form action="{{ route('logout') }}" method="post">
+    @csrf
+    <input type="submit" value="ログアウト">
+  </form>
 @endsection
 
-@section('footer')
-copyright 2020 東京情報クリエイター工学院専門学校.
-@endsection
+
 

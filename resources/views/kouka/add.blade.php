@@ -3,7 +3,7 @@
 @section('title', 'Kouka')
 
 @section('menu_title')
-ユーザ情報新規登録画面
+競走馬データ新規登録画面
 @endsection
 
 @section('content')
@@ -24,8 +24,6 @@
     <tr><th></th><td><input type="submit" value="新規登録"></td></tr>
    </table>
    </form>
+   <button type="button" onClick="history.back()">戻る</button>
 @endsection
 
-@section('footer')
-copyright 2020 東京情報クリエイター工学院専門学校.
-@endsection

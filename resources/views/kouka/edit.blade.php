@@ -3,7 +3,7 @@
 @section('title', 'Kouka')
 
 @section('menu_title')
-ユーザ情報更新画面
+競走馬データ更新画面
 @endsection
 
 @section('content')
@@ -29,8 +29,6 @@
          value="更新"></td></tr>
    </table>
    </form>
+   <button type="button" onClick="history.back()">戻る</button>
 @endsection
 
-@section('footer')
-copyright 2020 東京情報クリエイター工学院専門学校.
-@endsection
