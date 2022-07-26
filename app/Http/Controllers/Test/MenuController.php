@@ -21,10 +21,12 @@ class MenuController extends Controller
     }
 public function search()
  {
+    //照会処理画面の表示
     return view('test/search');
  }
 public function update()
 {
+    //更新処理画面の表示
         return view('test/update');
 }
 // public function update(Request $request )
@@ -51,6 +53,7 @@ public function update()
 
 public function complete(Request $request)
 {
+    //更新完了画面の表示
     $inputdata = ['inputdata' => $request->inputdata];
         return view('test/complete',$inputdata);
 }

@@ -9,7 +9,7 @@
 
             <a href="/test/update">更新処理</a><br />
 
-            <a href="/ono_db/index">アカウント管理</a><br /><br />            
+            <a href="/ono_db/index">アカウント一覧</a><br /><br />            
 
         <a href={{ route('logout') }} onclick="event.preventDefault();
         document.getElementById('logout-form').submit();">
