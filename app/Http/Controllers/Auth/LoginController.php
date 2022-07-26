@@ -26,7 +26,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/test/menu';
+    protected $redirectTo = '/kouka';
 
     /**
      * Create a new controller instance.
@@ -37,4 +37,5 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
+    
 }
